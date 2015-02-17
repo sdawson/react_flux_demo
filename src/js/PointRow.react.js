@@ -12,13 +12,14 @@ var PointRow = React.createClass({
   },
 
   render: function() {
+    var key = this.props.point.x + ":" + this.props.point.y;
     return (
-      <div>
+      <div key={key}>
         <div className="point">
-          x: {this.props.point.point.x}
+          x: {this.props.point.x}
         </div>
         <div className="point">
-          y: {this.props.point.point.y}
+          y: {this.props.point.y}
         </div>
         <a className="delete" onClick={this._onDelete} />
       </div>

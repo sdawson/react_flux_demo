@@ -10,7 +10,9 @@ function addPoint(point) {
   // Would replace this with actual id creation
   var id = (+new Date() + Math.floor(Math.random() * 999999)).toString(36);
   _points[id] = {
-    id : id, point : point
+    id : id,
+    x : point.x,
+    y : point.y
   };
 }
 
@@ -32,7 +34,7 @@ var PointStore = assign({}, EventEmitter.prototype, {
   getAll: function() {
     var points = [];
     mapObject(_points, function(point) {
-      points.push(point.point);
+      points.push({ x : point.x, y : point.y });
     });
     return _points;
   },

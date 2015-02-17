@@ -13,8 +13,12 @@ var PointsChart = React.createClass({
     var chart = null;
 
     if (Object.keys(this.props.points).length) {
-      for (var point in this.props.points) {
-        ps.push(this.props.points[point].point);
+      for (var p in this.props.points) {
+        var point = {
+          x : this.props.points[p].x,
+          y : this.props.points[p].y
+        };
+        ps.push(point);
       }
       var data = { name: "series1", values: ps };
       chart = 
