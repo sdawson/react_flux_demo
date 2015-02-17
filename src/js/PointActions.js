@@ -1,11 +1,23 @@
 var PointConstants = require('./PointConstants');
 var PointDispatcher = require('./PointDispatcher');
 
+/*
+ * Mean max temperature (C) for Viewbank, Victoria, AU
+ * for the year 2014
+ */
 var demoPoints = [
-  { x : 0, y : 7 },
-  { x : 1, y : 2 },
-  { x : 2, y : 3 },
-  { x : 4, y : 2 }
+  { x : 1,  y : 29.7 },
+  { x : 2,  y : 29.7 },
+  { x : 3,  y : 26.2 },
+  { x : 4,  y : 20.9 },
+  { x : 5,  y : 18.7 },
+  { x : 6,  y : 15.0 },
+  { x : 7,  y : 13.9 },
+  { x : 8,  y : 15.3 },
+  { x : 9,  y : 18.5 },
+  { x : 10, y : 22.2 },
+  { x : 11, y : 24.6 },
+  { x : 12, y : 25.4 }
 ];
 
 var PointActions = {
