@@ -1,4 +1,3 @@
-var Griddle = require('griddle-react');
 var PointStore = require('./PointStore');
 var PointTable = require('./PointTable.react');
 var PointsChart = require('./PointsChart.react');
