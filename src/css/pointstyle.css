@@ -1,0 +1,151 @@
+.pointsApp {
+  min-height: 800px;
+  margin: 0px;
+  padding: 0px;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-flex-flow: row;
+          flex-flow: row;
+}
+
+.pointsApp .pointsChart {
+  margin: 4px;
+  padding: 5px;
+  /*border: 1px solid #cccc33;
+  border-radius: 7pt;
+  background: #dddd88;*/
+  -webkit-flex: 3 1 60%;
+          flex: 3 1 60%;
+  -webkit-order: 2;
+          order: 2;
+}
+
+.pointsApp .pointTable {
+  margin: 4px;
+  padding: 5px;
+  border-radius: 2pt;
+  background: #a5c1cc;
+  -webkit-flex: 1 6 25%;
+          flex: 1 6 25%;
+  -webkit-order: 1;
+          order: 1;
+  text-align: center;
+}
+
+.addDemoData,
+.deleteAll {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.addDemoData:focus,
+.addDemoData:active:focus,
+.addDemoData.active:focus,
+.addDemoData.focus,
+.addDemoData:active.focus,
+.addDemoData.active.focus,
+.deleteAll:focus,
+.deleteAll:active:focus,
+.deleteAll.active:focus,
+.deleteAll.focus,
+.deleteAll:active.focus,
+.deleteAll.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.addDemoData:hover,
+.addDemoData:focus,
+.addDemoData.focus,
+.deleteAll:hover,
+.deleteAll:focus,
+.deleteAll.focus {
+  color: #333;
+  background-color: #e6e6e6;
+  text-decoration: none;
+}
+
+.addDemoData:active,
+.addDemoData.active,
+.deleteAll:active,
+.deleteAll.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.pointInput {
+  margin-left: 5px;
+  width: 50px;
+  padding: 0.5em 0.6em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pointInput:focus {
+  outline: 0;
+  border-color: #129FEA;
+}
+
+.point {
+  display: inline-block;
+  padding: 0.5em 0.6em;
+}
+
+.delete {
+  display: inline-block;
+  background-image: url("../img/delete_icon.png");
+  min-width: 20px;
+  min-height: 20px;
+  padding: 0.5em 0.6em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  vertical-align: middle;
+}
+
+.add {
+  display: inline-block;
+  background-image: url("../img/add_icon.png");
+  min-width: 20px;
+  min-height: 20px;
+  padding: 0.5em 0.6em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  vertical-align: middle;
+}
+
+.pointControls {
+  vertical-align: bottom;
+}
