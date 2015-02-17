@@ -1,6 +1,6 @@
 var PointStore = require('./PointStore');
-var PointTable = require('./PointTable.react');
 var PointsChart = require('./PointsChart.react');
+var PointsTable = require('./PointsTable.react');
 var React = require('react');
 
 var PointsApp = React.createClass({
@@ -25,7 +25,7 @@ var PointsApp = React.createClass({
   render: function() {
     return (
       <div className="pointsApp">
-        <PointTable points={this.state.points} />
+        <PointsTable points={this.state.points} />
         <PointsChart points={this.state.points} />
       </div>
     );

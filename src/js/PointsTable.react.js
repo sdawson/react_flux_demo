@@ -4,7 +4,7 @@ var PointRow = require('./PointRow.react');
 var React = require('react');
 var ReactPropTypes = React.PropTypes;
 
-var PointTable = React.createClass({
+var PointsTable = React.createClass({
   propTypes: {
     points: ReactPropTypes.object.isRequired
   },
@@ -29,7 +29,7 @@ var PointTable = React.createClass({
     }
 
     return (
-      <div className="pointTable">
+      <div className="pointsTable">
         {rows}
         <div className="pointAdder">
           <PointEditor handleAdd={this._addPoint} />
@@ -47,4 +47,4 @@ var PointTable = React.createClass({
   }
 });
 
-module.exports = PointTable;
+module.exports = PointsTable;
