@@ -7,6 +7,15 @@ var PointRow = React.createClass({
     point: ReactPropTypes.object.isRequired
   },
 
+  // shouldComponentUpdate: function(nextProps, nextState) {
+  //   return this.props.point.x !== nextProps.point.x ||
+  //          this.props.point.y !== nextProps.point.y;
+  // },
+
+  // componentWillUpdate: function(nextProps, nextState) {
+  //   console.log('componentWillUpdate:');
+  // },
+
   _onDelete: function(event) {
     PointActions.deletePoint(this.props.point.id);
   },
