@@ -40,7 +40,6 @@ var PointStore = assign({}, EventEmitter.prototype, {
   },
 
   emitChange: function() {
-    // also add action in this??? prob want to filter in the views
     this.emit('change');
   },
 
@@ -48,7 +47,6 @@ var PointStore = assign({}, EventEmitter.prototype, {
     this.on('change', callback);
   },
 
-  // why is this a callback and not an object or something?
   removeListener: function(callback) {
     this.removeListener('change', callback);
   },
