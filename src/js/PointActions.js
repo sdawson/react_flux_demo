@@ -1,5 +1,5 @@
-var PointConstants = require('./PointConstants');
-var PointDispatcher = require('./PointDispatcher');
+import PointConstants from './PointConstants';
+import PointDispatcher from './PointDispatcher';
 
 /*
  * Mean max temperature (C) for Viewbank, Victoria, AU

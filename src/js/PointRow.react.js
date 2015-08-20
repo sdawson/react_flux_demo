@@ -1,10 +1,10 @@
-var PointActions = require('./PointActions');
-var React = require('react');
-var ReactPropTypes = React.PropTypes;
+import PointActions from './PointActions';
+import React from 'react';
+import { PropTypes } from 'react';
 
 var PointRow = React.createClass({
   propTypes: {
-    point: ReactPropTypes.object.isRequired
+    point: PropTypes.object.isRequired
   },
 
   // shouldComponentUpdate: function(nextProps, nextState) {

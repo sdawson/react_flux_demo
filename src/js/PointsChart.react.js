@@ -1,11 +1,11 @@
-var React = require('react');
-var ReactPropTypes = React.PropTypes;
-var rd3 = require('react-d3');
-var ScatterChart = rd3.ScatterChart;
+import React from 'react';
+import { PropTypes } from 'react';
+import rd3 from 'react-d3';
+import { ScatterChart } from 'react-d3';
 
 var PointsChart = React.createClass({
   propTypes: {
-    points: ReactPropTypes.object.isRequired
+    points: PropTypes.object.isRequired
   },
 
   render: function() {

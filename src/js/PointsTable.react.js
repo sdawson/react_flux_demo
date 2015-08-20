@@ -1,12 +1,12 @@
-var PointActions = require('./PointActions');
-var PointEditor = require('./PointEditor.react');
-var PointRow = require('./PointRow.react');
-var React = require('react');
-var ReactPropTypes = React.PropTypes;
+import PointActions from './PointActions';
+import PointEditor from './PointEditor.react';
+import PointRow from './PointRow.react';
+import React from 'react';
+import { PropTypes } from 'react';
 
 var PointsTable = React.createClass({
   propTypes: {
-    points: ReactPropTypes.object.isRequired
+    points: PropTypes.object.isRequired
   },
 
   _addPoint: function(point) {

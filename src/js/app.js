@@ -1,6 +1,5 @@
-/** @jsx React.DOM */
-var React = require('react');
-var PointsApp = require('./PointsApp.react');
+import PointsApp from './PointsApp.react';
+import React from 'react';
 
 React.render(
   <PointsApp />,

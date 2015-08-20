@@ -1,9 +1,9 @@
-var React = require('react');
-var ReactPropTypes = React.PropTypes;
+import React from 'react';
+import { PropTypes } from 'react';
 
 var PointEditor = React.createClass({
   propTypes: {
-    handleAdd: ReactPropTypes.func.isRequired,
+    handleAdd: PropTypes.func.isRequired,
   },
 
   getInitialState: function() {

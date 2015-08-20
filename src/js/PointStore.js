@@ -1,8 +1,8 @@
-var PointConstants = require('./PointConstants');
-var PointDispatcher = require('./PointDispatcher');
-var EventEmitter = require('events').EventEmitter;
-var assign = require('object-assign');
-var mapObject = require('react/lib/mapObject');
+import PointConstants from './PointConstants';
+import PointDispatcher from './PointDispatcher';
+import { EventEmitter } from 'events';
+import assign from 'object-assign';
+import mapObject from 'react/lib/mapObject';
 
 var _points = {};
 

@@ -1,7 +1,7 @@
-var PointStore = require('./PointStore');
-var PointsChart = require('./PointsChart.react');
-var PointsTable = require('./PointsTable.react');
-var React = require('react');
+import PointStore from './PointStore';
+import PointsChart from './PointsChart.react';
+import PointsTable from './PointsTable.react';
+import React from 'react';
 
 var PointsApp = React.createClass({
   getInitialState: function() {
