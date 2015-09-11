@@ -2,6 +2,8 @@
 
 A demo graphing app that uses React components and the Flux pattern
 
+[![Dependencies][dep-image]][deps]
+
 ## Install
 
 ```
@@ -18,3 +20,6 @@ npm start
 ## License
 
 MIT
+
+[dep-image]: https://david-dm.org/sdawson/react_flux_demo.svg
+[deps]: https://david-dm.org/sdawson/react_flux_demo
