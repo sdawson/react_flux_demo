@@ -1,7 +1,8 @@
 import PointsApp from './PointsApp.react';
 import React from 'react';
+import ReactDOM from 'react-dom';
 
-React.render(
+ReactDOM.render(
   <PointsApp />,
   document.getElementById('container')
 );
