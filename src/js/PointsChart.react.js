@@ -20,7 +20,7 @@ var PointsChart = React.createClass({
         };
         ps.push(point);
       }
-      var data = { name: "series1", values: ps };
+      var data = [{ name: "series1", values: ps }];
       chart = 
         <ScatterChart
           data={data}
