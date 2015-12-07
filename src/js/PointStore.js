@@ -2,7 +2,6 @@ import PointConstants from './PointConstants';
 import PointDispatcher from './PointDispatcher';
 import { EventEmitter } from 'events';
 import assign from 'object-assign';
-import mapObject from 'react/lib/mapObject';
 
 var _points = {};
 
@@ -32,10 +31,6 @@ function deleteAllPoints() {
 
 var PointStore = assign({}, EventEmitter.prototype, {
   getAll: function() {
-    var points = [];
-    mapObject(_points, function(point) {
-      points.push({ x : point.x, y : point.y });
-    });
     return _points;
   },
 
